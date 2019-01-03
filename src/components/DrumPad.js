@@ -31,7 +31,7 @@ class DrumPad extends Component {
     }
 
     render() {
-        const { clipId, clip, keyTrigger, keyCode } = this.props
+        const { clipId, clip, keyTrigger } = this.props
 
         return (
             <div id={clipId} onClick={this.playSound} className="drum-pad">
