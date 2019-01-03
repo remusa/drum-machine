@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+.drum-machine {
+  border: 2px solid red;
+  border-radius: 2px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(auto, 60px) 1fr;
+  grid-template-areas: "display"
+    "pad-bank";
+
+  .display {
+    grid-area: display;
+  }
+
+  .pad-bank {
+    grid-area: pad-bank;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .drum-pad {
+      border: 2px solid black;
+      cursor: pointer;
+      margin: 10px;
+
+      flex: 1 0 200px;
+    }
+  }
+
+
+}
