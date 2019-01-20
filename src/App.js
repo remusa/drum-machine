@@ -59,6 +59,7 @@ const padBank = [
         url: 'https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3',
     },
 ]
+
 class App extends Component {
     constructor(props) {
         super(props)
